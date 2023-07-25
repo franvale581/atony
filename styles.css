@@ -157,3 +157,111 @@
     font-size: 40px;   
 }
 
+/* ------- section products ------- */
+
+
+#products{
+
+}
+.banner-container__products {
+    background: linear-gradient(to right, #f5f3f4, #d3d3d3);
+    padding: 2rem;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.banner-container__title {
+    background: linear-gradient(to right, #ea1111, #988f94);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/** Grid **/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.products {
+    padding: 2rem;
+    background-color: var(--text-grey);
+    box-shadow: 0px 0px 6px rgba(22, 26, 29, 0.45);
+    border-radius: 2px;
+}
+.products__imagen {
+    width: 100%;
+}
+.products__nombre{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 1.2;
+}
+/* Button REALIZAR COMPRA */
+
+.products__btn{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.cta {
+    border: none;
+    background: none;
+}
+
+.cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+
+.cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active svg {
+    transform: scale(0.9);
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
