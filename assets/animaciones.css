@@ -1,0 +1,99 @@
+:root {
+
+    /*---Backgrounds---*/
+    --bg: #0b090a;
+    --bg-light: #161a1d;
+    --bg-red: #ba181b;
+    --bg-red-light: #e5383b;
+    --bg-logo-red: #f30008;
+
+    /*---Text colors---*/
+    --txt-white: #f5f3f4;
+    --text-grey: #d3d3d3;
+    --text-red: #ba181b;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4.6rem;
+  }
+
+/*-------Header Nav-------*/
+
+.nav-item{
+    transition: all 0.3s ease-out;
+}
+
+.nav-item:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in;
+}
+
+.nav-item a{
+    transition: all 0.3s ease-out;
+}
+
+.nav-item a:hover {
+    color: var(--bg-logo-red);
+    transition: all 0.3s ease-in;
+}
+
+/*-------Hero Section-------*/
+
+.hero-left-container h1 {
+    animation: fade 1s ease-in, slide-up 1.3s ease-in-out;
+}
+
+.hero-left-container p {
+    opacity: 0;
+    animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+    animation-delay: 0.3s;
+}
+
+@keyframes slide-up {
+    from {
+      transform: translateY(100px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  
+  @keyframes slide-right {
+    from {
+      transform: translateX(100px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.hero-right-container {
+    opacity: 0;
+    animation: fade 1s ease-in forwards, slide-right 1.3s ease-in-out;
+    animation-delay: 0.2s;
+}
+
+/*------- Banner -------*/
+
+.banner-container {
+    opacity: 0;
+    animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+    animation-delay: 0.3s;
+}
+
+.banner-container h2{
+    opacity: 0;
+    animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+    animation-delay: 0.3s;
+}
