@@ -34,7 +34,7 @@ html {
 }
 
 .nav-item a:hover {
-    color: var(--bg-logo-red);
+    color: var(--bg-red-light);
     transition: all 0.3s ease-in;
 }
 
