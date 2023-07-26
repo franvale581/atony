@@ -1,1 +1,1 @@
-// Efecto hover en productos
+// Efecto scroll

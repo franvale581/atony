@@ -201,6 +201,7 @@
     margin: 1rem 0;
     text-align: center;
     line-height: 1.2;
+    font-weight: 600;
 }
 /* Button REALIZAR COMPRA */
 
@@ -266,3 +267,31 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+
+/*------- Banner 2 Section -------*/
+
+#banner-2 {
+    width: 100%;
+    height: 10rem;
+    background: linear-gradient(to right, #f5f3f4, #d3d3d3);
+}
+
+.banner-2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+    background: var(--bg);
+}
+
+.banner-2-container h2 {
+    display: flex;
+    background: linear-gradient(to right, #ea1111, #988f94);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 40px;   
+}
+
+/*------ Contact Section-------*/
