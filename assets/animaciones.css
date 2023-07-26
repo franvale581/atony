@@ -79,7 +79,7 @@ html {
 
 /*------- Banner -------*/
 
-.banner-container {
+/* .banner-container {
     opacity: 0;
     animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
     animation-delay: 0.3s;
@@ -89,7 +89,7 @@ html {
     opacity: 0;
     animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
     animation-delay: 0.3s;
-}
+} */
 
 /*------ Product Section -------*/
 
