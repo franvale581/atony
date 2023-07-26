@@ -241,6 +241,7 @@
     position: relative;
     color: black;
     padding-bottom: 20px;
+    cursor: pointer;
 }
 
 .hover-underline-animation:after {
@@ -295,3 +296,115 @@
 }
 
 /*------ Contact Section-------*/
+
+/*---left---*/
+
+#contact {
+    display: flex;
+    width: 100%;
+    height: 50rem;
+    background: linear-gradient(to right, #f5f3f4, #d3d3d3);
+}
+
+.contact-left-container {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.contact-left-container img {
+    display: flex;
+    align-items: center;
+    height: 43rem;
+    margin-top: 3rem;
+    background: var(--bg);
+    border-radius: 50px;
+    box-shadow: 0 0 10px 2px #f30008 ;
+}
+
+/*---right---*/
+
+.contact-right-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+
+.contact-right-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-right-info h2 {
+    position: relative;
+    bottom: 5rem;
+    display: flex;
+    font-size: 40px;
+    text-align: center;
+    background: linear-gradient(to left, #ea1111, #0b090a);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.contact-right-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+    padding-right: 5rem;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.contact-right-list a {
+    background: linear-gradient(to left, #ea1111, #0b090a);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 600;
+    cursor: pointer;
+}
+/* ------ section contacto ------- */
+#contacto{
+    height: 26rem;
+    width: 100%;
+    background-color: var(--bg);
+}
+
+.container-contacto {
+    height: 26rem;
+    width: 100%;
+}
+
+.logo-contacto{
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+}
+
+.title-contacto{
+    text-align: center;
+    color: var(--text-grey);
+    margin-bottom: 3rem;
+}
+.item-contacto{
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: -2rem;
+    color: var(--text-grey);
+}
+
+.item-descripcion{
+    font-size: 1.2rem;
+    list-style: none;
+    padding: 0 1.2rem;
+}
+ .item-redes {
+    text-align: center;
+    font-size: .2rem;
+    list-style: none;
+    padding: 0 1.2rem;
+ }
